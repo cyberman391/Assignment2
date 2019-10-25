@@ -34,12 +34,4 @@ public class orderitemdetail extends AppCompatActivity {
         orderitemDescriptionTextView.setText(order.getDescription());
         imageView.setImageResource(order.getImageDrawableId());
     }
-    public void add_to_list(View view) {
-        if(view == findViewById(R.id.orderitem)) {
-            choices = choices + orderitemTextView    + "\n";
-        }
-        else if (view != findViewById(R.id.orderitem)) {
-            choices = "0";
-        }
-    }
 }
